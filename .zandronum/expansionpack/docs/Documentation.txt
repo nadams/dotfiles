@@ -1,0 +1,247 @@
+========================================================================
+
+ Zandronum Expansion Pack
+ Version 1.6
+ Copyright 2007-2008 Todd Nickens
+ Copyright 2012-2013 DevilHunter
+
+========================================================================
+
+========================================================================
+
+ Index
+
+========================================================================
+
+ I.   Introduction
+ II.  Getting Started
+ III. Features
+       A. Playlist Control
+           1. Change Playlist
+           2. Next Playlist Song
+           3. Previous Playlist Song
+       B. Volume Control
+           1. Mute (Toggle)
+           2. Increase Sound Volume
+           3. Decrease Sound Volume
+           4. Increase Announcer Volume
+           5. Decrease Announcer Volume
+           6. Increase Music Volume
+           7. Decrease Music Volume
+       C. Zoom
+           1. Zoom (Hold)
+           2. Zoom (Toggle)
+           3. Zoom 1x
+           4. Zoom 2x
+           5. Zoom 5x
+           6. Zoom 12x
+       D. Misc
+           1. Clean Screenshot
+           2. Reconnect
+           3. Save Configuration
+           4. Suicide
+		   5. Toggle Binds
+ IV.  Credits
+ V.   Copyright
+
+========================================================================
+
+ I. Introduction
+
+========================================================================
+
+What is the Zandronum Expansion Pack exactly?  This expansion pack brings
+new features and functions for the fantastic client/server Doom port
+Zandronum.  You will find a number of useful features such as clean
+screenshot, in-game music playlist control, and weapon zoom aiming.
+
+This release isn't as big as it was planned to be, but planned features
+not in this pack will be added in a future release.  Until then, hope
+you enjoy this release!
+
+========================================================================
+
+ II. Getting Started
+
+========================================================================
+
+Equipping Zandronum with this expansion pack is quick and easy!  All you
+need to do is extract all the contents in the root of your Zandronum
+directory.  That's it!
+
+This expansion pack requires that the included "autoexec.cfg" file to be
+in the root of your Zandronum directory.  If your Zandronum directory
+already contains this file, simply overwrite it.  By chance you have
+created your own "autoexec.cfg" file that you don't want to overwrite,
+you can use a text editor to copy the necessary launch commands to your
+own.
+
+If you have successfully extracted all the contents in the root of your
+Zandronum directory, you can start binding keys.  Just start Zandronum and
+go to Options > Customize Controls.  At the bottom of the list you will
+find all the new things this expansion pack has to offer.
+
+Be sure to read the information on "Save Configuration" below in the
+feature list.  If you don't, there is a chance you may run into problems
+later down the road.
+
+Enjoy!
+
+========================================================================
+
+ III. Features
+
+========================================================================
+
+ A. Playlist Control
+-------------------------------------------------------------------------
+
+ 1. Change Playlist
+
+    - With this feature you can easily change between four music
+      playlists in Zandronum!  All you need to do is create one to four
+      m3u playlists and save them in the expansionpack/playlists
+      directory.  You MUST name your m3u playlists "playlist1",
+      "playlist2","playlist3", and "playlist4".
+
+ 2. Next Playlist Song
+
+    - This will allow you to play the next song in in the current
+      playlist playing.
+
+ 3. Previous Playlist Song
+
+    - This will allow you to play the previous song in the current
+      playlist playing.
+
+
+ B. Volume Control
+-------------------------------------------------------------------------
+
+ 1. Mute (Toggle)
+
+    - With one quick keystroke you can mute and restore ALL sounds and
+      music in Zandronum.
+
+ 2. Increase Sound Volume
+
+    - This allows you to increase the game sound effects volume.
+
+ 3. Decrease Sound Volume
+
+    - This allows you to decrease the game sound effects volume.
+
+ 4. Increase Announcer Volume
+
+    - This allows you to increase the game announcer music volume.
+
+ 5. Decrease Announcer Volume
+
+    - This allows you to decrease the game announcer music volume.
+
+ 6. Increase Music Volume
+
+    - This allows you to increase the game music volume (mp3, ogg, etc.).
+
+ 7. Decrease Music Volume
+
+    - This allows you to decrease the game music volume (mp3, ogg, etc.).
+
+
+ C. Zoom
+-------------------------------------------------------------------------
+
+ 1. Zoom (Hold)
+
+     This will allow your screen to zoom in and out.  In order to stay
+     zoomed in, you must hold the key you have this set to.  Remember,
+     this will not work online if the server does not allow FOV changes.
+
+ 2. Zoom (Toggle)
+
+     This will allow your screen to zoom in and out.  Press the key once
+     repeated times to change your zoom distance.  After you have
+     reached the maximum distance your view will be restored to normal.
+     Remember, this will not work online if the server does not allow
+     FOV changes.
+
+ 3. Zoom 1x
+
+     This will restore your view back to normal.
+
+ 4. Zoom 2x
+
+     This will allow your screen to zoom in by a factor of 2 from your
+     standard field of view.
+
+ 5. Zoom 5x
+
+     This will allow your screen to zoom in by a factor of 5 from your
+     standard field of view.
+
+ 6. Zoom 12x
+
+     This will allow your screen to zoom in by a factor of 12 from your
+     standard field of view.
+
+ D. Misc
+-------------------------------------------------------------------------
+
+ 1. Clean Screenshot
+
+     With this you to take a screenshot without all of the hud clutter
+     It even restores your hud settings!
+
+ 2. Reconnect
+
+    This allows you to easily set a key to reconnect to the server.
+
+ 3. Save Configuration
+
+     This is a command that you may need to use at some point.  This
+     records your Zandronum settings so they can be restored when you
+     use a feature that modifies your settings.  Now, every time you
+     launch Zandronum your settings will get recorded.  However, if you
+     make a change while playing you will have three options.  You can
+     either have this command bound to a key and press that key after
+     you make a change, type "saveconfig" in the console, or restart
+     Zandronum.
+
+     If your new settings don't get recorded, you might find one or two
+     getting reverted back to the old setting.
+
+ 4. Suicide
+
+     This will have your player kill it-self.
+	 
+ 5. Toggle Binds
+ 
+	This is just two binds made for the convenience. The first one is 
+	CoopInfo. This toggles on and off the CoopInfo Display on the Hud. 
+	Simple Bind really. The second one is HudScale Bind. This one simply
+	Toggles on and off the scaling of your hud. 
+
+========================================================================
+
+ IV. Credits
+
+========================================================================
+
+Aliases
+  Todd "WastedYouth" Nickens
+
+Crosshairs
+  Nigel "Enjay" Rowand
+  
+Fixing up the Expansion Pack and Maintaining it
+  DevilHunter
+
+========================================================================
+
+ IV. Copyright
+
+========================================================================
+
+Authors may use the contents of these files as a base for modification
+or reuse, provided you give full credit.  You may distribute this package,
+provided you include the complete package, with no modifications.
