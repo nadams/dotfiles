@@ -7,6 +7,14 @@ if [ -f $HOME/.bash_completion.d/git-flow-completion.bash ]; then
   source ~/.bash_completion.d/git-flow-completion.bash
 fi
 
+if [ -f $HOME/.local/bin/prefs.sh ]; then
+  $HOME/.local/bin/prefs.sh
+fi
+
+if [ -f $HOME/.local/bin/git-prompt.sh ]; then
+  source ~/.local/bin/git-prompt.sh
+fi
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -57,18 +65,12 @@ ex ()
   fi
 }
 
-~/bin/prefs.sh
-
-source ~/.local/bin/git-prompt.sh
+export PATH=/home/nick/.local/bin:$GOPATH/bin:$PATH
 export GIT_PS1_SHOWDIRTYSTATE='true'
 export GIT_PS1_SHOWUNTRACKEDFILES='true'
 export PS1='\[\033[00m\]\u:\[\033[01;33m\]\w\[\033[31m\]$(__git_ps1 "(%s)")\[\033[00m\]$\[\033[00m\] '
 export GOPATH=$HOME/go
 export BROWSER=/usr/bin/xdg-open
-export PATH=/home/nick/.local/bin:\
-$GOPATH/bin:\
-$PATH
-
 export JAVA_HOME=/opt/java
 export DOOMWADDIR=~/wads
 export WINEARCH=win32
