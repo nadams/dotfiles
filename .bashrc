@@ -33,13 +33,20 @@ export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 
-alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto'
-alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ls='ls --group-directories-first --time-style=+"%Y-%m-%d %H:%M" --color=auto -N'
+alias ll='ls -l --group-directories-first --time-style=+"%Y-%m-%d %H:%M" --color=auto -F'
+alias la='ls -la --group-directories-first --time-style=+"%Y-%m-%d %H:%M" --color=auto -F'
 alias grep='grep --color=tty -d skip'
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
+alias zandronum="$HOME/.local/opt/zandronum/zandronum"
+alias sbtdebug='sbt -jvm-debug 5005'
+alias yaourt='yaourt'
+alias doom3='pasuspender -s=alsa doom3'
+alias rand='ranpwd'
+alias gd='git diff'
+alias gs='git status'
 
 # ex - archive extractor
 # usage: ex <file>
@@ -65,13 +72,13 @@ ex ()
   fi
 }
 
-export PATH=/home/nick/.local/bin:$GOPATH/bin:$PATH
+export socks_proxy="127.0.0.1:4457"
+export GOPATH=$HOME/go
+export PATH=/home/nick/.gem/ruby/2.2.0/bin:$HOME/.local/bin:$HOME/.local/opt/eclipse:$HOME/.local/opt/atlassian-plugin-sdk/bin:$PATH:$GOPATH/bin:$HOME/.local/opt/flyway
 export GIT_PS1_SHOWDIRTYSTATE='true'
 export GIT_PS1_SHOWUNTRACKEDFILES='true'
 export PS1='\[\033[00m\]\u:\[\033[01;33m\]\w\[\033[31m\]$(__git_ps1 "(%s)")\[\033[00m\]$\[\033[00m\] '
-export GOPATH=$HOME/go
 export BROWSER=/usr/bin/xdg-open
-export JAVA_HOME=/opt/java
 export DOOMWADDIR=~/wads
 export WINEARCH=win32
 export WINEPREFIX=~/win32
@@ -79,6 +86,12 @@ export WINEPREFIX=~/win32
 export MOZ_ACCELERATED=1
 export MOZ_GLX_IGNORE_BLACKLIST=1
 export EDITOR=vim
+export BORG_REPO=borg@borg:antares
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+#ibus-daemon -drx
 
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
   export TERM='xterm-256color'
@@ -86,4 +99,16 @@ else
   export TERM='xterm-color'
 fi
 
-eval `keychain -q --agents ssh --eval id_rsa id_rsa_pass`
+eval `keychain -q --agents ssh,gpg --eval id_rsa`
+
+export TERMINAL='xfce4-terminal'
+
+export NVM_DIR="/home/nick/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export ANDROID_HOME=$HOME/Android/Sdk/
+export ANSIBLE_NOCOWS=1
